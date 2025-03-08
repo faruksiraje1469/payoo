@@ -1,17 +1,31 @@
-document.getElementById("add-money").style.display = "block";
+document.getElementById("addmoney").style.display = "block";
 document.getElementById("cashout").style.display = "none";
+document.getElementById("transection-history").style.display = "none";
 
 document.getElementById("add-money-box").addEventListener("click",
     function() {
+        document.getElementById("addmoney").style.display = "block";
         document.getElementById("cashout").style.display = "none";
-        document.getElementById("add-money").style.display = "block";
+        document.getElementById("transection-history").style.display = "none";
+        
+    }
+)
+
+document.getElementById("cashout-box").addEventListener("click",
+    function() {
+        document.getElementById("cashout").style.display = "block";
+        document.getElementById("transection-history").style.display = "none";
+        document.getElementById("addmoney").style.display = "none";
     }
 )
 
 
-document.getElementById("cashout-box").addEventListener("click",
+
+document.getElementById("transection-box").addEventListener("click",
     function() {
-        document.getElementById("cashout").style.display = " block";
-        document.getElementById("add-money").style.display = "none";
+        document.getElementById("transection-history").style.display = "block";
+        document.getElementById("cashout").style.display = "none";
+        document.getElementById("addmoney").style.display = "none";
+       
     }
 )
