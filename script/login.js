@@ -11,10 +11,10 @@ document.getElementById("login-btn").addEventListener("click",
        //    convert the pin to integer
        const convertedPin = parseInt(pin);
 
-    //    validate the account number and pin
+       //   validate the account number and pin
        if (accountNumber.length === 11){
         if (convertedPin === 1234){
-            // console.log("Account number is correct");
+       // console.log("Account number is correct");
             window.location.href = "./main.html";
            
         }
